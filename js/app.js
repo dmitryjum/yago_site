@@ -1,7 +1,8 @@
 var myApp = angular.module('myApp', [
   'ngRoute',
   'yagoPageControllers',
-  'yagoDirectives'
+  'yagoDirectives',
+  'ui.bootstrap'
 ]);
 
 myApp.config(['$routeProvider', function($routeProvider) {
