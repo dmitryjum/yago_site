@@ -1,5 +1,5 @@
 <div id="container">
   <div ng-repeat="video in videos" class="item">
-    <img ng-src="{{video.file}}" ng-click="open(sm)" />
+    <img ng-src="{{video.file}}" ng-click="open('lg', video.video_link)" />
   </div>
 </div>

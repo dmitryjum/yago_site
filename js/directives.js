@@ -5,16 +5,14 @@ myApp.directive('masonry',function() {
     replace: true,
     templateUrl: "partials/masonry.html",
     controller: function($scope, $modal, $log) {
-      $scope.items = ['item1', 'item2', 'item3'];
-      $scope.open = function (size) {
-
+      $scope.open = function (size, link) {
         var modalInstance = $modal.open({
           templateUrl: 'partials/videoModal.html',
           controller: 'ModalInstanceCtrl',
           size: size,
           resolve: {
-            items: function () {
-              return $scope.items;
+            link: function () {
+              return link;
             }
           }
         });
@@ -43,12 +41,9 @@ myApp.directive('masonry',function() {
   }
 });
 
-myApp.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+myApp.controller('ModalInstanceCtrl', function ($scope, $modalInstance, link, $sce) {
 
-  $scope.items = items;
-  $scope.selected = {
-    item: $scope.items[0]
-  };
+  $scope.video = link;
 
   $scope.ok = function () {
     $modalInstance.close($scope.selected.item);
@@ -58,3 +53,9 @@ myApp.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
     $modalInstance.dismiss('cancel');
   };
 });
+
+myApp.filter('trusted', ['$sce', function ($sce) {
+    return function(url) {
+        return $sce.trustAsResourceUrl(url);
+    };
+}]);
