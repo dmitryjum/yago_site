@@ -37,11 +37,12 @@
 }
 
 .menu > li > a {
-  font-family: 'Open Sans', sans-serif;
+  font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
   color: black;
 }
 
 .modal-content {
   width: 760px;
   height: 515px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.9);
 }
