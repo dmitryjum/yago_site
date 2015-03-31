@@ -1,2 +1,42 @@
-.item img { width: 50%; }
-.item.w2 { width: 50%; }
+.item img {
+  width: 100%;
+}
+
+.item {
+  width: 200px;
+  margin-bottom: 3px;
+}
+
+.label {
+  font-family: 'Indie Flower', cursive;
+  color: black;
+  font-size: 100px;
+}
+
+.right {
+  padding-left: 8%;
+  padding-top: 15px;
+}
+
+.menu li {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top: solid #000 1px;
+  position: relative;
+  text-align: center;
+  
+  font-size: 25px;
+  letter-spacing: 0px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  padding: 25px 0;
+  cursor: pointer
+}
+
+.menu > li > a {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
