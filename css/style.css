@@ -40,3 +40,8 @@
   font-family: 'Open Sans', sans-serif;
   color: black;
 }
+
+.modal-content {
+  width: 760px;
+  height: 515px;
+}
