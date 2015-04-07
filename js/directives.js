@@ -1,30 +1,9 @@
-var myApp = angular.module('yagoDirectives',['ui.bootstrap']);
+var myApp = angular.module('yagoDirectives',[]);
 myApp.directive('masonry',function() {
   return {
     restrict: 'E',
     replace: true,
     templateUrl: "partials/masonry.html",
-    controller: function($scope, $modal, $log) {
-      $scope.open = function (size, link) {
-        var modalInstance = $modal.open({
-          templateUrl: 'partials/videoModal.html',
-          controller: 'ModalInstanceCtrl',
-          size: size,
-          resolve: {
-            link: function () {
-              return link;
-            }
-          }
-        });
-
-        modalInstance.result.then(function (selectedItem) {
-          $scope.selected = selectedItem;
-        }, function () {
-          $log.info('Modal dismissed at: ' + new Date());
-        });
-      };
-    },
-    controllerAs: "modalCtrl",
     link: function(scope, element, attrs) {
       scope.$watch('videos', function(oldVal, newVal ) {
         // $watch is watching for scope variables changes on the template
@@ -45,17 +24,29 @@ myApp.directive('masonry',function() {
   }
 });
 
-myApp.controller('ModalInstanceCtrl', function ($scope, $modalInstance, link, $sce) {
+myApp.directive('fancybox', function ($compile, $http) {
+    return {
+        restrict: 'A',
 
-  $scope.video = link;
+        controller: function($scope) {
+             $scope.openFancybox = function (url) {
 
-  $scope.ok = function () {
-    $modalInstance.close($scope.selected.item);
-  };
+                $http.get(url).then(function(response) {
+                    if (response.status == 200) {
 
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
+                        var template = angular.element(response.data);
+                        var compiledTemplate = $compile(template);
+                        compiledTemplate($scope);
+
+                        $.fancybox.open({
+                         content: template,
+                         type: 'html'
+                       });
+                    }
+                });
+            };
+        }
+    };
 });
 
 myApp.filter('trusted', ['$sce', function ($sce) {

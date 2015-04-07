@@ -5,6 +5,7 @@
 .item {
   width: 200px;
   margin-bottom: 3px;
+  cursor: pointer;
 }
 
 .label {
