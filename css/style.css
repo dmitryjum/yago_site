@@ -6,6 +6,7 @@
   width: 200px;
   margin-bottom: 3px;
   cursor: pointer;
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);;
 }
 
 .label {
@@ -35,6 +36,10 @@
   text-decoration: none;
   padding: 25px 0;
   cursor: pointer
+}
+
+.item:hover {
+  box-shadow: none;
 }
 
 .menu > li > a {
