@@ -12,25 +12,28 @@
   <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 </head>
 <body>
-  <section class="container-fluid">
-    <div class="row-fluid">
+  <div class="background-image"></div>
+  <div class="content">
+    <section class="container-fluid">
+      <div class="row-fluid">
 
-      <div class="col-sm-4 left">
-        <div class="label">
-          <p>BuZziT</p>
+        <div class="col-sm-4 left">
+          <div class="label">
+            <p>BuZziT</p>
+          </div>
+
+          <ul class="menu">
+            <li><a href="#/">video</a></li>
+            <li><a href="#/about">about</a></li>
+            <li><a href="#/contacts">contacts</a></li>
+          </ul>
+
         </div>
 
-        <ul class="menu">
-          <li><a href="#/">video</a></li>
-          <li><a href="#/about">about</a></li>
-          <li><a href="#/contacts">contacts</a></li>
-        </ul>
-
+        <div class="col-sm-8 right" ng-view></div>      
       </div>
-
-      <div class="col-sm-8 right" ng-view></div>      
-    </div>
-  </section>
+    </section>
+  </div>
 </body>
   <script src="angular/angular.min.js"></script>
   <script src="angular/angular-route.min.js"></script>
