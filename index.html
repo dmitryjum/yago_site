@@ -10,14 +10,23 @@
   <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
   <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
   <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="background-image"></div>
-  <div class="content">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/buzzitme"><i class="fa fa-facebook fa-lg"></i></a></li>
+        <li>
+          <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
     <section class="container-fluid">
       <div class="row-fluid">
 
-        <div class="col-sm-4 left">
+        <div class="col-sm-3 left no-float">
           <div class="label">
             <p>BuZziT</p>
           </div>
@@ -25,15 +34,14 @@
           <ul class="menu">
             <li><a href="#/">video</a></li>
             <li><a href="#/about">about</a></li>
-            <li><a href="#/contacts">contacts</a></li>
+            <!-- <li><a href="#/contacts">contacts</a></li> -->
           </ul>
 
         </div>
 
-        <div class="col-sm-8 right" ng-view></div>      
+        <div class="col-sm-9 right no-float" ng-view></div>      
       </div>
     </section>
-  </div>
 </body>
   <script src="angular/angular.min.js"></script>
   <script src="angular/angular-route.min.js"></script>

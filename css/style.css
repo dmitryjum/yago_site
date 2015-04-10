@@ -1,27 +1,10 @@
-.background-image {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 1;
-
-  display: block;
-  background-image: url(../img/background.jpg);
+body {
+  background-image: url(../img/background_updated.jpg);
   background-size: cover !important;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-
-  -webkit-filter: blur(5px)grayscale(100%);
-  -moz-filter: blur(5px)grayscale(100%);
-  -o-filter: blur(5px)grayscale(100%);
-  -ms-filter: blur(5px)grayscale(100%);
-  filter: blur(5px)grayscale(100%);
-}
-
-.content {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 8000;
+  /*padding-top: 70px;*/
 }
 
 .item img {
@@ -40,6 +23,7 @@
   font-family: 'Indie Flower', cursive;
   color: white;
   font-size: 100px;
+  text-shadow: 7px 7px 8px #111;
 }
 
 .right {
@@ -51,12 +35,10 @@
   display: block;
   width: 100%;
   height: auto;
-  border-top: solid white 1px;
   position: relative;
   text-align: center;
   
   font-size: 25px;
-  letter-spacing: 0px;
   line-height: 1em;
   text-transform: uppercase;
   color: #000;
@@ -65,19 +47,45 @@
   cursor: pointer
 }
 
+
 .item:hover {
   box-shadow: none;
+  -o-transition:box-shadow 0.4s ease-out;
+  -ms-transition:box-shadow 0.4s ease-out;
+  -moz-transition:box-shadow 0.4s ease-out;
+  -webkit-transition:box-shadow 0.4s ease-out;
+  transition:box-shadow 0.4s ease-out;
 }
 
-.item img:hover {
-  box-shadow: inset 2px 2px 5px black;
-}
 
-.menu > li > a {
-  font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+.menu li a {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5em;
   color: white;
+  text-shadow: 4px 4px 7px #111;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-shadow: none;
+  -o-transition:text-shadow 0.4s ease-out;
+  -ms-transition:text-shadow 0.4s ease-out;
+  -moz-transition:text-shadow 0.4s ease-out;
+  -webkit-transition:text-shadow 0.4s ease-out;
+  transition:text-shadow 0.4s ease-out;
 }
 
 #about-header {
   color: white;
+}
+
+.navbar-static-top{
+  /*background-color: black;*/
+  border-color: #E7E7E7;
+  height: 40px;
+  min-height: 40px;
+}
+
+.nav li a {
+  padding-top: 10px;
 }

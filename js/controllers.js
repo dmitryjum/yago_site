@@ -15,7 +15,7 @@ yagoPageControllers.controller('AboutController', ['$scope', '$http', function($
   $scope.contrName = "About";
 }]);
 
-yagoPageControllers.controller('ContactsController', ['$scope', '$http', function($scope, $http) {
-  $scope.name = "Yago";
-  $scope.contrName = "Contacts";
-}]);
+// yagoPageControllers.controller('ContactsController', ['$scope', '$http', function($scope, $http) {
+//   $scope.name = "Yago";
+//   $scope.contrName = "Contacts";
+// }]);
