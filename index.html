@@ -2,6 +2,7 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>Yago Site</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,20 +14,38 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-static-top">
+  <nav class="navbar navbar-inverse navbar-static-top" ng-controller="CollapseController">
     <div class="container-fluid">
-      <ul class="nav navbar-nav navbar-right">
+      <!-- <ul class="nav navbar-nav navbar-right">
         <li><a href="https://www.facebook.com/buzzitme"><i class="fa fa-facebook fa-lg"></i></a></li>
         <li>
           <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
         </li>
-      </ul>
+      </ul> -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" ng-click="isCollapsed = !isCollapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" collapse="isCollapsed">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/">video</a></li>
+            <li><a href="#/about">about</a></li>
+            <li><a href="https://www.facebook.com/buzzitme">Facebook</a></li>
+            <li><a href="#">Email</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+
     </div>
   </nav>
     <section class="container-fluid">
       <div class="row-fluid">
 
-        <div class="col-sm-3 left no-float">
+        <div class="col-sm-2 col-xs-12 left no-float">
           <div class="label">
             <p>BuZziT</p>
           </div>
@@ -34,12 +53,14 @@
           <ul class="menu">
             <li><a href="#/">video</a></li>
             <li><a href="#/about">about</a></li>
+            <li><a href="https://www.facebook.com/buzzitme">Facebook</a></li>
+            <li><a href="#">Email</a></li>
             <!-- <li><a href="#/contacts">contacts</a></li> -->
           </ul>
 
         </div>
 
-        <div class="col-sm-9 right no-float" ng-view></div>      
+        <div class="col-sm-10 col-xs-12 right no-float" ng-view></div>      
       </div>
     </section>
 </body>

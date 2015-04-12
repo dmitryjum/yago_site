@@ -13,7 +13,7 @@ body {
 }
 
 .item {
-  width: 200px;
+  width: 250px;
   margin-bottom: 3px;
   cursor: pointer;
   box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);;
@@ -27,8 +27,16 @@ body {
 }
 
 .right {
-  padding-left: 7%;
+  padding-left: 11%;
   padding-top: 15px;
+}
+
+.left {
+  padding-right: 0px !important;
+}
+
+.menu {
+  padding-left: 35% !important;
 }
 
 .menu li {
@@ -82,10 +90,26 @@ body {
 .navbar-static-top{
   /*background-color: black;*/
   border-color: #E7E7E7;
-  height: 40px;
-  min-height: 40px;
+  /*height: 40px;*/
+  /*min-height: 40px;*/
 }
 
-.nav li a {
-  padding-top: 10px;
+
+@media (max-width: 690px) {
+
+  .menu {
+    display: none;
+  }
+
+  .label {
+    font-size: 80px !important;
+  }
+
+}
+
+@media (min-width: 690px){
+   nav {
+    display: none;
+  }
+
 }

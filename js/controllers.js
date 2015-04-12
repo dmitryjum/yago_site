@@ -1,4 +1,4 @@
-var yagoPageControllers = angular.module('yagoPageControllers', []);
+var yagoPageControllers = angular.module('yagoPageControllers', ['ui.bootstrap']);
 
 yagoPageControllers.controller('VideoController', ['$scope', '$http', function($scope, $http) {
   // the following http request will slow down scope.videos loading,
@@ -14,6 +14,10 @@ yagoPageControllers.controller('AboutController', ['$scope', '$http', function($
   $scope.name = "Yago";
   $scope.contrName = "About";
 }]);
+
+yagoPageControllers.controller('CollapseController', function($scope) {
+  $scope.isCollapsed = true;
+})
 
 // yagoPageControllers.controller('ContactsController', ['$scope', '$http', function($scope, $http) {
 //   $scope.name = "Yago";

@@ -11,7 +11,7 @@ myApp.directive('masonry',function() {
         if (oldVal !== newVal) {
           var container = document.getElementById("container");
           var msnry = new Masonry( container, {
-            columnWidth: 200,
+            columnWidth: 250,
             gutter: 3,
             itemSelector: '.item'
           });
