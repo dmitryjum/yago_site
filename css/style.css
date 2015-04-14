@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/background_updated.jpg);
+  background-image: url(../img/background3.jpg);
   background-size: cover;
   background-repeat: repeat-y;
   width: 100%;
@@ -12,7 +12,7 @@ body {
 }
 
 .item {
-  width: 230px;
+  width: 450px;
   margin-bottom: 3px;
   cursor: pointer;
   box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);;
@@ -20,7 +20,7 @@ body {
 
 .label {
   font-family: 'Indie Flower', cursive;
-  color: white;
+  color: rgb(53,53,53);
   font-size: 100px;
   text-shadow: 7px 7px 8px #111;
 }
@@ -79,7 +79,7 @@ body {
 }
 
 #about-header, .menu li a {
-  color: white;
+  color: rgb(53,53,53);
   font-family: 'Modern', serif;
 }
 
@@ -104,6 +104,18 @@ body {
 
   body {
     background-size: auto auto;
+  }
+  .item {
+    width: 310px;
+  }
+
+  .right {
+    padding-left: 2%;
+    padding-top: 0px;
+  }
+
+  .left {
+    padding-right: 10px !important;
   }
 
 }

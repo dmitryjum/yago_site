@@ -1,49 +1,25 @@
 [
   {
-    "name": "BatteryPl",
-    "file": "img/compass.gif",
+    "name": "screen1",
+    "file": "img/screen1.png",
     "video_link": "http://www.youtube.com/embed/VfsFV7VGBzI",
     "desctiption": "Predator's Teenage Son"
   },
   {
-    "name": "compass",
-    "file": "img/17BatteryPl 232-png.jpg",
+    "name": "screen2",
+    "file": "img/screen2.png",
     "video_link": "http://www.youtube.com/embed/yYJeItqxHok",
     "desctiption": "Predator's Teenage Son"
   },
   {
-    "name": "deadfishflow",
-    "file": "img/deadfishflow.png",
+    "name": "screen3",
+    "file": "img/screen3.png",
     "video_link": "http://www.youtube.com/embed/V3eXOkVpEAo",
     "desctiption": "Predator's Teenage Son"
   },
   {
-    "name": "new victories",
-    "file": "img/new victories.jpg",
-    "video_link": "http://www.youtube.com/embed/VfsFV7VGBzI",
-    "desctiption": "Predator's Teenage Son"
-  },
-  {
-    "name": "BatteryPl",
-    "file": "img/compass.gif",
-    "video_link": "http://www.youtube.com/embed/VfsFV7VGBzI",
-    "desctiption": "Predator's Teenage Son"
-  },
-  {
-    "name": "compass",
-    "file": "img/17BatteryPl 232-png.jpg",
-    "video_link": "http://www.youtube.com/embed/yYJeItqxHok",
-    "desctiption": "Predator's Teenage Son"
-  },
-  {
-    "name": "deadfishflow",
-    "file": "img/deadfishflow.png",
-    "video_link": "http://www.youtube.com/embed/V3eXOkVpEAo",
-    "desctiption": "Predator's Teenage Son"
-  },
-  {
-    "name": "new victories",
-    "file": "img/new victories.jpg",
+    "name": "screen4",
+    "file": "img/screen4.png",
     "video_link": "http://www.youtube.com/embed/VfsFV7VGBzI",
     "desctiption": "Predator's Teenage Son"
   }
