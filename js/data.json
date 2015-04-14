@@ -1,26 +1,26 @@
 [
   {
-    "name": "screen1",
-    "file": "img/screen1.png",
-    "video_link": "http://www.youtube.com/embed/VfsFV7VGBzI",
+    "name": "Winter Days with Pasha Asinov",
+    "file": "img/Winter Days with Pasha Asinov.png",
+    "video_link": "https://player.vimeo.com/video/120838068",
     "desctiption": "Predator's Teenage Son"
   },
   {
-    "name": "screen2",
-    "file": "img/screen2.png",
-    "video_link": "http://www.youtube.com/embed/yYJeItqxHok",
+    "name": "SkyDive The Ranch.png",
+    "file": "img/SkyDive The Ranch.png",
+    "video_link": "https://player.vimeo.com/video/35234437",
     "desctiption": "Predator's Teenage Son"
   },
   {
-    "name": "screen3",
-    "file": "img/screen3.png",
-    "video_link": "http://www.youtube.com/embed/V3eXOkVpEAo",
+    "name": "Boat Party NYC",
+    "file": "img/Boat Party NYC.png",
+    "video_link": "https://player.vimeo.com/video/50988467",
     "desctiption": "Predator's Teenage Son"
   },
   {
-    "name": "screen4",
-    "file": "img/screen4.png",
-    "video_link": "http://www.youtube.com/embed/VfsFV7VGBzI",
+    "name": "Gleb & Anton 2011",
+    "file": "img/Gleb & Anton 2011.png",
+    "video_link": "https://player.vimeo.com/video/29512007",
     "desctiption": "Predator's Teenage Son"
   }
 ]
