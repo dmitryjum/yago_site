@@ -10,10 +10,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
   when('/', {
     templateUrl: 'partials/video.html'
   }).
-  when('/about', {
-    templateUrl: 'partials/about.html',
-    controller: 'AboutController'
-  }).
+  // when('/about', {
+  //   templateUrl: 'partials/about.html',
+  //   controller: 'AboutController'
+  // }).
   otherwise({
     redirectTo: '/'
   });
