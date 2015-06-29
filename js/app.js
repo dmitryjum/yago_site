@@ -2,18 +2,20 @@ var myApp = angular.module('myApp', [
   'ngRoute',
   'yagoPageControllers',
   'yagoDirectives',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'door3.css'
 ]);
 
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
   when('/', {
-    templateUrl: 'partials/video.html'
+    templateUrl: 'partials/video.html',
+    css: 'css/video.css'
   }).
-  // when('/about', {
-  //   templateUrl: 'partials/about.html',
-  //   controller: 'AboutController'
-  // }).
+  when('/admin', {
+    templateUrl: 'partials/admin.html',
+    css: 'css/admin.css'
+  }).
   otherwise({
     redirectTo: '/'
   });
