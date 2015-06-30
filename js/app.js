@@ -1,22 +1,24 @@
 var myApp = angular.module('myApp', [
-  'ngRoute',
+  'ui.router',
   'yagoPageControllers',
   'yagoDirectives',
   'ui.bootstrap',
   'door3.css'
 ]);
 
-myApp.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.
-  when('/', {
+myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise("/");
+  $stateProvider.
+  state('root', {
+    url: "/",
     templateUrl: 'partials/video.html',
+    controller: 'VideoController',
     css: 'css/video.css'
   }).
-  when('/admin', {
+  state('admin', {
+    url: "/admin",
+    controller: 'AdminController',
     templateUrl: 'partials/admin.html',
     css: 'css/admin.css'
-  }).
-  otherwise({
-    redirectTo: '/'
-  });
+  })
 }]);
