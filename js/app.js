@@ -17,8 +17,19 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
   }).
   state('admin', {
     url: "/admin",
-    controller: 'AdminController',
     templateUrl: 'partials/admin.html',
+    css: 'css/admin.css'
+  }).
+  state('admin.personal', {
+    url: "/admin/personal",
+    controller: 'AdminPersonalController',
+    templateUrl: 'partials/admin_personal.html',
+    css: 'css/admin.css'
+  }).
+  state('admin.content', {
+    url: "/admin/content",
+    controller: 'AdminContentController',
+    templateUrl: 'partials/admin_content.html',
     css: 'css/admin.css'
   })
 }]);

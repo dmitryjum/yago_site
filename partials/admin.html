@@ -10,20 +10,12 @@
   <div id="container">
     <aside>
       <ul id="nav">
-        <li><a class="selected" href="#">Dashboard</a></li>
-        <li><a href="#">Personal Details</a></li>
-        <li><a href="#">Site Content</a></li>
+        <li><a ui-sref="admin.personal" class="selected">Personal Details</a></li>
+        <li><a ui-sref="admin.content">Site Content</a></li>
       </ul>
     </aside>
 
-    <div class="content">
-      <h1>Dashboard</h1>
-      <p>Here you can do stuff</p>
-
-      <div class="box">
-        <div class="box-top">News</div>
-        <div class="box-panel">This is some simple news.</div>
-      </div>
+    <div ui-view class="content">
 
     </div>
   </div>
