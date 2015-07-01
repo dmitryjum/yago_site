@@ -6,7 +6,7 @@ yagoPageControllers.controller('VideoController', ['$scope', '$http', '$css', fu
   $http.get('js/data.json').success(function(data) {
     $scope.videos = data;
   });
-  $scope.name = "Yegor Taranov";
+  $scope.name = "Yago";
   $scope.address = "Some Place, 666, Minsk, Belarus"
   $scope.email = "email@email.com";
 }]);

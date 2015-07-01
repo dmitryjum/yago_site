@@ -21,13 +21,13 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
     css: 'css/admin.css'
   }).
   state('admin.personal', {
-    url: "/admin/personal",
+    url: "/personal",
     controller: 'AdminPersonalController',
     templateUrl: 'partials/admin_personal.html',
     css: 'css/admin.css'
   }).
   state('admin.content', {
-    url: "/admin/content",
+    url: "/content",
     controller: 'AdminContentController',
     templateUrl: 'partials/admin_content.html',
     css: 'css/admin.css'
