@@ -32,7 +32,6 @@ myApp.directive('fancybox', function ($compile, $http) {
 
         $http.get(url).then(function(response) {
             if (response.status == 200) {
-
               var template = angular.element(response.data);
               var compiledTemplate = $compile(template);
               compiledTemplate($scope);
