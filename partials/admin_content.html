@@ -1,39 +1,47 @@
-<h1>Site content</h1>
-<p>Her you can adjust stuff</p>
+<div ng-controller="AdminContentController">
+  <h1>Site content</h1>
+  <p>Her you can adjust stuff</p>
 
-<div class="box">
-  <div class="box-top">You current video list</div>
-  <table class="table table-striped">
-    <tr>
-      <th><b>Video Name</b></th>
-      <th><b>Screenshot Link</b></th>
-      <th><b>Video Link</b></th>
-      <th><b>Description</b></th>
-    </tr>
-  </table>
-</div>
+  <div class="box">
+    <div class="box-top">You current video list</div>
+    <table class="table">
+      <tr>
+        <th><b>Video Name</b></th>
+        <th><b>Screenshot Link</b></th>
+        <th><b>Video Link</b></th>
+        <th><b>Description</b></th>
+      </tr>
+      <tr ng-repeat="video in videos">
+        <td>{{video.name}}</td>
+        <td>{{video.file}}</td>
+        <td>{{video.video_link}}</td>
+        <td>{{video.description}}</td>
+      </tr>
+    </table>
+  </div>
 
-<div class="box">
-  <div class="box-top">Enter new video info</div>
-  <div class="box-panel">
-    <form>
-      <div class="form-group">
-        <label for="InputVideoName">Video Name</label>
-        <input type="text" class="form-control" id="InputVideoName" placeholder="Video Name">
-      </div>
-      <div class="form-group">
-        <label for="InputScreenShotLink">Screenshot Link</label>
-        <input type="text" class="form-control" id="screenshot" placeholder="Screenshot">
-      </div>
-      <div class="form-group">
-        <label for="InputVimeoLink">Vimeo Link</label>
-        <input type="text" class="form-control" id="vimeo-link" placeholder="VimeoLink">
-      </div>
-      <div class="form-group">
-        <label for="InputDescription">Video Description</label>
-        <input type="text" class="form-control" id="description" placeholder="description">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+  <div class="box">
+    <div class="box-top">Enter new video info</div>
+    <div class="box-panel">
+      <form>
+        <div class="form-group">
+          <label for="InputVideoName">Video Name</label>
+          <input type="text" class="form-control" id="InputVideoName" ng-model="video.name" placeholder="Video Name">
+        </div>
+        <div class="form-group">
+          <label for="InputScreenShotLink">Screenshot Link</label>
+          <input type="text" class="form-control" id="screenshot" ng-model="video.file" placeholder="Screenshot">
+        </div>
+        <div class="form-group">
+          <label for="InputVimeoLink">Vimeo Link</label>
+          <input type="text" class="form-control" id="vimeo-link" ng-model="video.video_link" placeholder="VimeoLink">
+        </div>
+        <div class="form-group">
+          <label for="InputDescription">Video Description</label>
+          <input type="text" class="form-control" id="description" ng-model="video.description" placeholder="description">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
   </div>
 </div>

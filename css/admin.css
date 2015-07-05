@@ -38,6 +38,7 @@ header {
 
 div#container {
   width: 100%;
+  height: 800px;
   margin: 0 auto;
 }
 
@@ -74,7 +75,7 @@ aside {
   font-weight: 300;
 }
 
-.box .box-panel {
+.box .box-panel, .table {
   padding: 15px;
   background-color: #fff;
   color: #333;

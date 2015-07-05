@@ -1,12 +1,11 @@
-var myApp = angular.module('myApp', [
+angular.module('YagoApp', [
   'ui.router',
-  'yagoPageControllers',
-  'yagoDirectives',
   'ui.bootstrap',
-  'door3.css'
+  'door3.css',
+  'ngResource'
 ]);
 
-myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+angular.module('YagoApp').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/");
   $stateProvider.
   state('root', {
