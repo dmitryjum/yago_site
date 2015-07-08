@@ -2,7 +2,8 @@ angular.module('YagoApp', [
   'ui.router',
   'ui.bootstrap',
   'door3.css',
-  'ngResource'
+  'ngResource',
+  'firebase'
 ]);
 
 angular.module('YagoApp').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
