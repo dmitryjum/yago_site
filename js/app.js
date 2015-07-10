@@ -1,20 +1,35 @@
-var myApp = angular.module('myApp', [
-  'ngRoute',
-  'yagoPageControllers',
-  'yagoDirectives',
-  'ui.bootstrap'
+angular.module('YagoApp', [
+  'ui.router',
+  'ui.bootstrap',
+  'door3.css',
+  'ngResource',
+  'firebase'
 ]);
 
-myApp.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.
-  when('/', {
-    templateUrl: 'partials/video.html'
+angular.module('YagoApp').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise("/");
+  $stateProvider.
+  state('root', {
+    url: "/",
+    templateUrl: 'partials/video.html',
+    controller: 'VideoController',
+    css: 'css/video.css'
   }).
-  when('/about', {
-    templateUrl: 'partials/about.html',
-    controller: 'AboutController'
+  state('admin', {
+    url: "/admin",
+    templateUrl: 'partials/admin.html',
+    css: 'css/admin.css'
   }).
-  otherwise({
-    redirectTo: '/'
-  });
+  state('admin.personal', {
+    url: "/personal",
+    controller: 'AdminPersonalController',
+    templateUrl: 'partials/admin_personal.html',
+    css: 'css/admin.css'
+  }).
+  state('admin.content', {
+    url: "/content",
+    controller: 'AdminContentController',
+    templateUrl: 'partials/admin_content.html',
+    css: 'css/admin.css'
+  })
 }]);

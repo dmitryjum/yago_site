@@ -34,25 +34,6 @@ body {
   padding-right: 0px !important;
 }
 
-.menu {
-  padding-left: 35% !important;
-}
-
-.menu li {
-  display: block;
-  width: 100%;
-  height: auto;
-  position: relative;  
-  font-size: 25px;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: none;
-  padding: 25px 0;
-  cursor: pointer
-}
-
-
 .item:hover {
   box-shadow: none;
   -o-transition:box-shadow 0.4s ease-out;
@@ -62,33 +43,49 @@ body {
   transition:box-shadow 0.4s ease-out;
 }
 
+.menu {
+  padding-left: 35% !important;
+  text-align: left;
+}
 
-.menu li a {
+.menu li {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  font-size: 1.5em;
+  line-height: 1em;
+  /*text-shadow: 4px 4px 7px #111;*/
+  color: #000;
+  /*text-transform: uppercase;*/
+  /*text-decoration: none;*/
+  /*padding: 25px 0;*/
+  /*cursor: pointer*/
+}
+
+
+/*.menu li a {
   font-size: 1.5em;
   text-shadow: 4px 4px 7px #111;
   text-decoration: none;
-}
+}*/
 
-.menu li a:hover {
+/*.menu li a:hover {
   text-shadow: none;
   -o-transition:text-shadow 0.4s ease-out;
   -ms-transition:text-shadow 0.4s ease-out;
   -moz-transition:text-shadow 0.4s ease-out;
   -webkit-transition:text-shadow 0.4s ease-out;
   transition:text-shadow 0.4s ease-out;
-}
+}*/
 
 #about-header, .menu li a {
   color: rgb(53,53,53);
   font-family: 'Modern', serif;
 }
 
-#about-header, .menu li {
+#about-header {
   text-align: center;
-}
-
-.navbar-static-top{
-  border-color: #E7E7E7;
 }
 
 
