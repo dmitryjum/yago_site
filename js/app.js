@@ -15,10 +15,10 @@ angular.module('YagoApp').config(['$stateProvider', '$urlRouterProvider', functi
     controller: 'VideoController',
     css: 'css/video.css'
   }).
-  state('admin', {
+  state('login', {
     url: "/admin",
-    templateUrl: 'partials/admin.html',
-    css: 'css/admin.css'
+    templateUrl: 'partials/login.html',
+    css: 'css/login.css'
   }).
   state('admin.personal', {
     url: "/personal",
