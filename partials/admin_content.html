@@ -11,7 +11,7 @@
         <th><b>Video Link</b></th>
         <th><b>Description</b></th>
       </tr>
-      <tr ng-repeat="video in videos">
+      <tr ng-repeat="video in videos" id={{video.$id}}>
         <td>{{video.name}}</td>
         <td>{{video.file}}</td>
         <td>{{video.video_link}}</td>

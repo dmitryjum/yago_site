@@ -4,7 +4,7 @@ angular.module('YagoApp').directive('masonry',function() {
     replace: true,
     templateUrl: "partials/masonry.html",
     link: function(scope, element, attrs) {
-      scope.$watch('videos', function(oldVal, newVal ) {
+      scope.$watchCollection('videos', function(oldVal, newVal ) {
         // $watch is watching for scope variables changes on the template
         // and as soon as values are different allows us to run anything
         if (oldVal !== newVal) {

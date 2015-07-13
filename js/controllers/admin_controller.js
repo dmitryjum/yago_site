@@ -1,5 +1,7 @@
-angular.module('YagoApp').controller('AdminController', ['$scope', '$http', function($scope, $http) {
-  // apply admin.js file here as well
-  $scope.name = "Yago";
-  $scope.contrName = "Admin";
-}]);
+angular.module('YagoApp').controller('AdminController', ['$scope', 'Auth',
+  function($scope, Auth) {
+    $scope.auth = Auth;
+    $scope.auth.$onAuth(function(authData) {
+      $scope.authData = authData;
+    })
+  }])

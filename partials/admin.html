@@ -1,19 +1,23 @@
-<header>
-  <div class="logo"><a href="#">Yago <span>Admin</span></a></div>
-</header>
+<div id="admin-room" ng-show="authData">
+  <header>
+    <div class="logo"><a href="#">Yago <span>Admin</span></a></div>
+    <div class="logo" ng-show="authData"><a href="#" ng-click="auth.$unauth()">Log Out {{authData.password.email}}</a></div>
+  </header>
 
-<a href="#" class="mobile">
-  MENU
-</a>
+  <a href="#" class="mobile">
+    MENU
+  </a>
 
-<div id="container">
+  <div id="container">
 
-  <aside>
-    <ul id="nav">
-      <li><a ui-sref="admin.personal" class="selected">Personal Details</a></li>
-      <li><a ui-sref="admin.content">Site Content</a></li>
-    </ul>
-  </aside>
+    <aside>
+      <ul id="nav">
+        <li><a ui-sref="admin.personal" class="selected">Personal Details</a></li>
+        <li><a ui-sref="admin.content">Site Content</a></li>
+      </ul>
+    </aside>
 
-  <div ui-view class="content"></div>
+    <div ui-view class="content">
+    </div>
+  </div>
 </div>
