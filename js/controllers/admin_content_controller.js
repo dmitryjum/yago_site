@@ -15,4 +15,7 @@ angular.module('YagoApp').controller('AdminContentController', ['$scope', 'Video
     $scope.isSubmitting = false;
     $scope.video = {};
   }
+  $scope.deleteVideo = function(video) {
+    $scope.videos.$remove(video)
+  }
 }]);

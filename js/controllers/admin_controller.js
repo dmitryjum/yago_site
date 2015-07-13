@@ -1,7 +1,5 @@
-angular.module('YagoApp').controller('AdminController', ['$scope', 'Auth',
-  function($scope, Auth) {
+angular.module('YagoApp').controller('AdminController', ['$scope', 'Auth', 'currentAuth',
+  function($scope, Auth, currentAuth) {
     $scope.auth = Auth;
-    $scope.auth.$onAuth(function(authData) {
-      $scope.authData = authData;
-    })
+    $scope.authData = currentAuth
   }])

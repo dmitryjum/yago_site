@@ -49,6 +49,10 @@ aside {
   float: left;
 }
 
+.link {
+  cursor: pointer;
+}
+
 .content {
   /*display: inline-block;*/
   width: auto;
