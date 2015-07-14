@@ -1,5 +1,12 @@
-angular.module('YagoApp').controller('AdminPersonalController', ['$scope', '$http', function($scope, $http) {
+angular.module('YagoApp').controller('AdminPersonalController', ['$scope', 'Personal',
+ function($scope, Personal) {
   // apply admin.js file here as well
-  $scope.name = "Yago";
-  $scope.contrName = "AdminPersonal";
+  $scope.info = Personal("info");
+  $scope.saveInfo = function() {
+      $scope.info.$save().then(function() {
+        alert('Profile saved!');
+      }).catch(function(error) {
+        alert('Error!');
+      });
+    };
 }]);
