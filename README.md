@@ -1,2 +1,2 @@
 Portfolio website with video gallery in development.
-Libraries and frameworks used: Angular.js, Masonry Grid layout library, Angullar Bootstrap ui responsive framework.
+Libraries and frameworks used: Angular.js, Masonry Grid layout library, Angullar Bootstrap ui responsive framework. Back-end database and user Auth is provided by Firebase.io based on Angularfire library.
