@@ -11,8 +11,8 @@
 
   <aside>
     <ul id="nav">
-      <li><a ui-sref="admin.personal" class="selected">Personal Details</a></li>
-      <li><a ui-sref="admin.content">Site Content</a></li>
+      <li><a ui-sref="admin.personal" ng-class="{'selected': isActive('admin.personal')}">Personal Details</a></li>
+      <li><a ui-sref="admin.content" ng-class="{'selected': isActive('admin.content')}">Site Content</a></li>
     </ul>
   </aside>
 

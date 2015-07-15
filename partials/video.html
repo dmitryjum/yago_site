@@ -12,9 +12,9 @@
 
       <div class="collapse navbar-collapse" collapse="isCollapsed">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">{{name}}</a></li>
-            <li><a href="#">{{address}}</a></li>
-            <li><a href="#">{{email}}</a></li>
+          <li><a href="#">{{info.name}}</a></li>
+            <li><a href="#">{{info.address}}</a></li>
+            <li><a href="#">{{info.email}}</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
 
@@ -25,13 +25,13 @@
 
         <div class="col-sm-2 col-xs-12 left no-float">
           <div class="label">
-            <p>BuZziT</p>
+            <p>{{info.logo}}</p>
           </div>
 
           <ul class="menu">
-            <li>{{name}}</li>
-            <li>{{address}}</li>
-            <li>{{email}}</li>
+            <li>{{info.name}}</li>
+            <li>{{info.address}}</li>
+            <li>{{info.email}}</li>
           </ul>
 
         </div>
