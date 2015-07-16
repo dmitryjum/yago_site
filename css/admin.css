@@ -21,6 +21,11 @@ header {
   margin: 0 auto;
 }
 
+#back-color {
+  width: 8%;
+  height: 10%;
+}
+
 .logo {
   float: left;
   margin-top: 10px;

@@ -21,6 +21,14 @@
         <label for="InputLogo">Site Logo</label>
         <input type="text" class="form-control" id="InputLogo" placeholder="Logo" ng-model="info.logo">
       </div>
+      <div class="form-group">
+        <label for="InputBackgroundImageLink">Background Image</label>
+        <input type="text" class="form-control" id="back-image" placeholder="background image" ng-model="info.backimage">
+      </div>
+      <div class="form-group">
+        <label for="InputBackgroundColor">Background Color</label>
+        <input type="color" class="form-control" id="back-color" placeholder="background color" ng-model="info.backcolor">
+      </div>
       <button type="submit" class="btn btn-default" ng-click="saveInfo()" ng-disabled="isSubmitting">Submit</button>
     </form>
   </div>
