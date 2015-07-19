@@ -5,7 +5,7 @@ angular.module('YagoApp').directive('masonry',function() {
     templateUrl: "partials/masonry.html",
     link: function(scope, element, attrs) {
       scope.$watchCollection('videos', function(oldVal, newVal ) {
-        // $watch is watching for scope variables changes on the template
+        // $watchCollection is watching for scope variables changes on the template
         // and as soon as values are different allows us to run anything
         if (oldVal !== newVal) {
           var container = document.getElementById("container");

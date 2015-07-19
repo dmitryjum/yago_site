@@ -1,4 +1,4 @@
-angular.module('YagoApp').directive('fancybox', function ($compile, $http) {
+angular.module('YagoApp').directive('fancybox', function($compile, $http) {
   return {
     restrict: 'A',
     controller: function($scope) {
