@@ -2,7 +2,6 @@ var yagoApp = angular.module('YagoApp', [
   'ui.router',
   'ui.bootstrap',
   'door3.css',
-  'ngResource',
   'firebase'
 ]);
 
