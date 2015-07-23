@@ -1,5 +1,5 @@
 <div id="container">
-  <div ng-repeat="video in videos" class="item">
+  <div ng-repeat="video in videos" class="item" ng-show="video.display">
     <img ng-src="{{video.file}}" fancybox ng-click="openFancybox('partials/videoModal.html')" class="img-thumbnail"/>
   </div>
 </div>

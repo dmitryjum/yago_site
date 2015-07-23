@@ -11,6 +11,7 @@
         <th><b>Video Link</b></th>
         <th><b>Description</b></th>
         <th><b>Action</b></th>
+        <th><b>Display</b></th>
       </tr>
       <tr ng-repeat="video in videos" id="{{video.$id}}">
         <td>{{video.name}}</td>
@@ -18,6 +19,7 @@
         <td>{{video.video_link}}</td>
         <td>{{video.description}}</td>
         <td><a class="link" ng-click="deleteVideo(video)">Delete</a></td>
+        <td><input type="checkbox" ng-model="video.display" ng-change="displayOn(video.$id)"></td>
       </tr>
     </table>
   </div>
