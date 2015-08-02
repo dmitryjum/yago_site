@@ -3,7 +3,7 @@ angular.module('YagoApp').directive('fancybox', function($compile, $http) {
     restrict: 'A',
     controller: function($scope) {
        $scope.openFancybox = function (url) {
-
+        ga('send', 'event', 'videoPreview', 'click', $scope.video.name);
         $http.get(url).then(function(response) {
             if (response.status == 200) {
               var template = angular.element(response.data);
