@@ -1,6 +1,5 @@
 angular.module('YagoApp').controller('AdminContentController', ['$scope', 'Video', "$firebaseArray",
  function($scope, Video, $firebaseArray) {
-  // apply admin.js file here as well
   $scope.videos = Video;
   $scope.isSubmitting = false;
   $scope.video = {};

@@ -70,5 +70,16 @@ yagoApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
         return Auth.$requireAuth();
       }]
     }
+  }).
+  state('admin.analytics', {
+    url: "/analytics",
+    controller: 'AdminAnalyticsController',
+    templateUrl: 'partials/admin_analytics.html',
+    css: 'css/admin.css',
+    resolve: {
+      "currentAuth": ["Auth", function(Auth) {
+        return Auth.$requireAuth();
+      }]
+    }
   })
 }]);
