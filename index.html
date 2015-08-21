@@ -14,11 +14,16 @@
   <div ui-view>
 
   </div>
+  <button id="auth-button" hidden>Authorize</button>
+  <textarea cols="80" rows="20" id="query-output"></textarea>
 </body>
+
+
 <!-- vendor -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/analytics.js"></script>
-<script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>
+<script src="reportingApi.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=authorize"></script>
 <script src="js/vendor/angular/angular.min.js"></script>
 <script src="js/vendor/angular/angular-ui-router.js"></script>
 <script src="js/vendor/angular/angular-animate.min.js"></script>
